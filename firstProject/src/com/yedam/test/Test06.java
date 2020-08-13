@@ -16,7 +16,7 @@ public class Test06 {
 //		int var = (int)doubleValue;
 //		System.out.println(var);
 		
-		char var = (char)strValue;
-		System.out.println(var);
+//		char var = (char)strValue;
+//		System.out.println(var);
 	}
 }

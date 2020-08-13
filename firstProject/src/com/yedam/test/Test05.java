@@ -14,8 +14,8 @@ public class Test05 {
 //		System.out.println(intValue);
 //		
 		
-		short intValue = charValue;
-		System.out.println(sortValue);
+//		short intValue = charValue;
+//		System.out.println(sortValue);
 //		
 		
 //		double doubleValue = byteValue;

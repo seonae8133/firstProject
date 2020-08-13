@@ -11,11 +11,13 @@ public class WhileExample2 {
 		int keyCode = 0;
 		
 		while(run) {
-			if(keyCode!=13 && keyCode!=10) {
 				System.out.println("키 입력해주세욘");
 				keyCode = System.in.read(); //사용자가 keyCode값을 입력하고 엔터치면 그 값을 변수에 담겠다.
+				if(keyCode!=13 && keyCode!=10) {
 				System.out.println(keyCode);
-			}
+				}
+				System.in.read();
+				System.in.read();
 //			System.out.println(keyCode);
 			if(keyCode ==57) {
 				run = false;
