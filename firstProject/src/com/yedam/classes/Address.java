@@ -36,7 +36,7 @@ public class Address {
 			} else if (selcNo == 2) {
 					System.out.println("----리스트------");
 					for(int i=0; i<fdAry.length; i++) {
-						System.out.println(i + "=" + fdAry[i]);
+						System.out.println();
 					}
 					
 					
