@@ -34,14 +34,20 @@ public class Exercise5_9 {
 		  }else if(selectNo == 4) {
 			  int max=0;
 			  int sum =0;
+			  int count = 0;
 			  for(int i=0; i<scores.length; i++) {
 				  if(max<scores[i]) {
 					  max = scores[i] ;
 				  }
 				  sum += scores[i];
+				  count++;
 			  }
-			  System.out.println(max);
-			  System.out.println(sum);
+			  int avg =sum/count;
+			  System.out.println("최대값 : " + max);
+//			  System.out.println("총 합계 : " +sum);
+			  System.out.println("평균점수 : "+avg);
+//			  System.out.printf("평균점수%.2f : "+avg);
+//			  System.out.println();
 		  }else if(selectNo ==5) {
 			  run = false;
 		  }
