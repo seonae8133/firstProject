@@ -55,13 +55,13 @@ public class Address {
 //				a.setfdPone(scan.nextLine());
 //				System.out.println(a.fdAll());
 			}
-			else if(selcNo == 9) {
-				selc = false;
-			}
+//			else if(selcNo == 9) {
+//				selc = false;
+//			}
 			
 		}
 		
 		
 		
 	}
-}
+//}

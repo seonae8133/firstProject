@@ -47,4 +47,10 @@ public class Friend2 {
 		this.phone = phone;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "동네친구 이름 : " + this.getName() +
+					", 연락처 : " + this.getPhone();
+	}
 }
