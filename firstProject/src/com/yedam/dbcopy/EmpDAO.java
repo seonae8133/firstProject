@@ -1,4 +1,4 @@
-package com.yedam.database;
+package com.yedam.dbcopy;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -44,9 +44,9 @@ public class EmpDAO { // 기능만 담당
 		
 	}
 	
-	public void removeEmp(int empId) {
+	public void removeEmp(Employee emp) {
 		Connection conn = DBConnection.getConnection();
-		String sql = "delete from emp_temp where employee_id =" + empId;
+		String sql = "delete from emp_temp where employee_id =" + emp.getEmployeeId();
 		System.out.println(sql);
 		try {
 			PreparedStatement psmt = conn.prepareStatement(sql);
@@ -91,8 +91,7 @@ public class EmpDAO { // 기능만 담당
 		
 		return employees; // 전체 배열 반환
 	} //end of getEmpList()
-
-
+	
 	
 	
 }//end of class
