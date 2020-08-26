@@ -1,6 +1,6 @@
 package com.yedam.collection;
 
-public class Student {
+public class Student implements Comparable<Student> {
 		//----------필드----------
 		private String name;
 		private int mathScore;
@@ -40,6 +40,12 @@ public class Student {
 		@Override
 		public String toString() {
 			return "학생정보 : 이름 =" + name + ", 수학점수 =" + mathScore + ",영어점수 =" + engScore;
+		}
+
+		@Override
+		public int compareTo(Student o) {//Comparable가 가지고 있는 추상메소드를 반드시 구현해줘야함
+
+			return this.mathScore-o.mathScore;
 		}
 		
 		
